@@ -3,13 +3,13 @@ const File = require('./src/file');
 const { rejects, deepEqual } = require('assert');
 (async () => {
   {
-    const filePath = './files/emptyFile-invalid.csv';
+    const filePath = './mocks/emptyFile-invalid.csv';
     const rejection = new Error(error.FILE_LENGTH_ERROR_MESSAGE);
     const result = File.csvToJson(filePath);
     await rejects(result, rejection);
   }
   {
-    const filePath = './files/fourItems-invalid.csv';
+    const filePath = './mocks/fourItems-invalid.csv';
     const rejection = new Error(error.FILE_LENGTH_ERROR_MESSAGE);
     const result = File.csvToJson(filePath);
     await rejects(result, rejection);
@@ -24,7 +24,7 @@ const { rejects, deepEqual } = require('assert');
         Mas por agora, adicionei o código abaixo para mockar o Date.
         */
     Date.prototype.getFullYear = () => 2020;
-    const filePath = './files/threeItems-valid.csv';
+    const filePath = './mocks/threeItems-valid.csv';
     const result = await File.csvToJson(filePath);
     const expected = [
       {
