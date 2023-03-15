@@ -1,0 +1,16 @@
+[
+  {
+    "id": "746c1ada-aca1-4e64-a823-0b58a124a1ce",
+    "name": "Land Cruiser",
+    "releaseYear": 2022,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "e2dd3ab9-fc29-47b0-935c-d5591e8890cf",
+    "name": "Expedition",
+    "releaseYear": 2023,
+    "available": true,
+    "gasAvailable": true
+  }
+]

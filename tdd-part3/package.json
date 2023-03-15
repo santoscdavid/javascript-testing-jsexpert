@@ -1,0 +1,23 @@
+{
+  "name": "tdd",
+  "version": "3.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha -w --parallel test/unitTests/*.test.js",
+    "test:cov": "npx nyc npx mocha --parallel test/unitTests/*.test.js",
+    "seed": "node ./seed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
+    "sinon": "^15.0.1"
+  },
+  "dependencies": {
+    "chai": "^4.3.7"
+  }
+}
